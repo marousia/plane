@@ -1,9 +1,3 @@
-/*сидения:
-цвет заливки: #FFFFFF;
-цвет обводки обычного состояния: #A4C2EC;
-цвет обводки при наведении: #eccea4;
-цвет обводки при заблокированном сидении #CCCCCC;*/
-
 
 body {
 	background: #291c4b;
@@ -15,20 +9,28 @@ body {
     line-height: normal;
     font-family: "Open Sans", Arial;
     line-height: 24px;
-    color: #212121;
+    color: #ff0404;
     margin: auto;
 }
 
 .tail-aircutter-flip {
-    /*починить крило можно тут*/
+    transform: scale(-1,1);
 }
 
 .place {
+    fill: #FFFFFF;
+    opacity: 60%;
+    stroke:#A4C2EC;
+    
 }
 .place:hover {
+    stroke: #eccea4;
 }
 
 .place-disabled {
+   stroke: #CCCCCC;;
+   fill: white;
+    
 }
 
 
@@ -36,6 +38,10 @@ body {
 	font-size: 14px;
 	stroke-width: 1px;
 	letter-spacing: 1.1px;
+   
+    fill: #FFFFFF;
+    
+    
 }
 
 .place-currency{
